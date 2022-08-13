@@ -1,4 +1,26 @@
+body {
+    display: flex;
+    align-items: center;
+}
+
 .container {
     display: grid;
     grid-template-columns: auto auto;
+    height: 960px;
+    width: 960px;
+    outline: 1px solid grey;
+    box-shadow: 5px 5px grey;
+}
+
+.grid {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 400px;
+    gap: 20px
 }
