@@ -1,11 +1,12 @@
 body {
     display: flex;
     align-items: center;
+    background-color: #1f2937;
+    color: antiquewhite;
 }
 
 .container {
     display: grid;
-    grid-template-columns: auto auto;
     height: 960px;
     width: 960px;
     outline: 1px solid grey;
@@ -21,6 +22,24 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
-    padding-left: 400px;
+    padding-left: 350px;
     gap: 20px
+}
+
+.color-selector,
+.reset {
+    height: 100px;
+    width: 250px;
+    color: antiquewhite;
+    background-color: #3882f6;
+    border-radius: 30px;
+    border-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#color-choice {
+    width: 30px;
+    height: 30px;
 }

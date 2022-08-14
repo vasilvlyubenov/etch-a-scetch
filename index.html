@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Etch A Sketch</title>
+        <link rel="stylesheet" href="./css/style.css"> 
+        <title>Etch-A-Sketch</title>
     </head>
     <body>
         <div class="container">
@@ -12,11 +12,15 @@
         </div>
         <div class="board"></div>
             <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
-                <input id="range" type="range" min="1" max="64">
+                <h1>Choose color:</h1>
+                <button class="color-selector">Pick a color: 
+                    <input type="color" value="Black" id="color-choice"/>
+                </button>
+                <button class="color-selector" data-color="black">Black</button>
+                <button class="color-selector" data-color="white">White</button>
+                <button class="color-selector" data-color="random">Random</button>
+                <button class="reset">Reset</button>
+                <input id="range" type="range" min="1" max="64"/>
             </div>
         <script src="./script/script.js"></script>
     </body>
